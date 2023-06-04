@@ -1,0 +1,29 @@
+<template>
+  <lightning-card>
+  <div class="slds-m-left_medium slds-border_right">
+    <lightning-card>My lightning-card-1
+      <lightning-card>lightning-card inside the lightning-card</lightning-card>
+    </lightning-card>
+    <span class="slds-avatar slds-avatar_profile-image-large">
+      <span class="slds-assistive-text">Person name</span>
+    </span>
+  </div>
+    <lightning-card>lightning-card outside of the lightning-card</lightning-card>
+    <div class="slds-m-left_medium slds-align_absolute-center">
+        <lightning-input label="My Label" placeholder="input something" required="" class="slds-align_absolute-center" onchange={handleChange}></lightning-input>
+    </div>
+    <div class="slds-form-element">
+      <div class="slds-form-element__control">
+      <div class="slds-checkbox">
+      <input type="checkbox" name="options" id="checkbox-unique-id-80" value="checkbox-unique-id-80" checked="" />
+      <label class="slds-checkbox__label" for="checkbox-unique-id-80">
+      <span class="slds-checkbox_faux"></span>
+      <span class="slds-form-element__label">Checkbox Label</span>
+      </label>
+      </div>
+      </div>
+      </div>
+    <button class="slds-button slds-button_brand">Brand Button</button>
+  </lightning-card>
+  
+</template>

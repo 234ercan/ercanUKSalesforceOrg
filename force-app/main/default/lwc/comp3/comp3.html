@@ -1,0 +1,25 @@
+<template>
+  <lightning-card>
+    <div class="slds-grid slds-wrap">
+      <lightning-input class="slds-size_1-of-2" type="text" label="Name" placeholder="enter a name" required="" onchange={handleName} ></lightning-input>
+      <lightning-input class="slds-size_1-of-3" type="number" label="Phone" placeholder="enter phone number" required="" onchange={handlePhone} ></lightning-input>
+    </div>
+  </lightning-card>
+  
+  <lightning-card>
+    <button class="slds-button slds-button_success" onclick={handleClick}>Save</button>
+  </lightning-card>
+  <lightning-card>
+    <button class="slds-button slds-button_success" onclick={handleSubmit}>Submit</button>
+  </lightning-card>
+
+  <lightning-card>
+  <button class="slds-button slds-button_brand" onclick={handleCount}>Count</button>
+  </lightning-card>
+  
+  <lightning-card>
+    <div class="saveButton">
+      <span>{save}</span>
+    </div>
+  </lightning-card>  
+</template>

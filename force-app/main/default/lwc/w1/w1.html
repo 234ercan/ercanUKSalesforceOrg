@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="PII">
+      <lightning-input placeholder="enter a name" label="FirstName" onchange={handleName}>First Name</lightning-input>
+      <lightning-input placeholder="enter a surname" label="LastName" onchange={handleSurname}>Last Name</lightning-input>
+      <lightning-button variant="brand-outline" label="Brand Outline" title="Primary action with lighter look" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    </lightning-card>
+    <lightning-card>
+       <h1>{fullName}</h1>
+    </lightning-card>
+</template>

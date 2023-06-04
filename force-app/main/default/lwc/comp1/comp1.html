@@ -1,0 +1,44 @@
+<template>
+  <span class="slds-avatar slds-avatar_profile-image-large">
+    <span class="slds-assistive-text">Person name</span>
+  </span>
+  
+  <div class="slds-border_right">
+    <lightning-card> lightning-card
+    <lightning-card class="slds-align_absolute-center" style="height:5rem">lightning-card inside the card</lightning-card>
+    </lightning-card>
+    <lightning-card> lightning-card outside the lightning-card</lightning-card>
+  </div>
+  <div class="slds-align_absolute-center">
+    <lightning-input type="text" label="My Input" placeholder="enter a text" required="" class="slds-input" onchange={handleChange}></lightning-input>
+  </div>
+  <div class="slds-grid slds-wrap">
+    <div class="slds-col slds-size_6-of-12 slds-p-around_x-small">
+        <lightning-input type="text" label="First Name" onchange={firstNameChange} required></lightning-input>
+    </div>
+    <div class="slds-col slds-size_6-of-12 slds-p-around_x-small">
+        <lightning-input type="text" label="Last Name" onchange={lastNameChange} required></lightning-input>
+    </div>
+    <div class="slds-col slds-size_6-of-12 slds-p-around_x-small">
+        <lightning-input type="text" label="SSN" onchange={ssnChange} required></lightning-input>
+    </div>
+    <div class="slds-col slds-size_6-of-12 slds-p-around_x-small">
+        <lightning-input type="date" label="DOB" onchange={dateChange} required></lightning-input>
+    </div>
+    <div class="slds-col slds-size_6-of-12 slds-p-around_x-small">
+        <lightning-input type="text" label="Mobile" onchange={mobileChange} required></lightning-input>
+    </div>
+    <div class="slds-col slds-size_6-of-12 slds-p-around_x-small">
+        <lightning-input type="email" label="Email" onchange={emailChange} required></lightning-input>
+    </div>
+    <div class="slds-col slds-size_12-of-12 slds-p-around_x-small">
+        <lightning-textarea label="Address" onchange={addressChange} required></lightning-textarea>
+    </div>
+    <div class="slds-col slds-size_12-of-12 slds-p-around_x-small slds-align_absolute-center">
+        <lightning-button variant="brand" label="Save" title="Save" onclick={saveClick}
+            class="slds-p-horizontal_x-small"></lightning-button>
+        <lightning-button variant="brand" label="Close" title="Close" onclick={closeClick}
+            class="slds-p-horizontal_x-small"></lightning-button>
+    </div>
+  </div>
+</template>

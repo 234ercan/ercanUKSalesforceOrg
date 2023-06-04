@@ -1,0 +1,22 @@
+<template>
+   
+   <lightning-card title="To-Do-List">
+       <lightning-input placeholder="Enter your action" onchange={handleAction}>
+       </lightning-input>
+       <Div> <lightning-button label="Add to List" onclick={handleClick}>
+         </lightning-button>
+         <lightning-card>
+           <template for:each={todoList} for:item="action">
+           
+           <ol key={action}>
+             <li class="iteration">
+               {action}
+                           
+             </li>
+           </ol>
+         </template>
+         </lightning-card>
+        
+       </Div>
+     </lightning-card>
+ </template>
